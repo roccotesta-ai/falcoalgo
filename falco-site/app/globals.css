@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --bg:#0B0F19; --fg:#E5E7EB; }
+html,body{height:100%; background:var(--bg); color:var(--fg);}
+.container-2xl{ @apply max-w-screen-2xl mx-auto px-6; }
+.card{ @apply bg-graphite rounded-2xl p-6 shadow-soft; }
+.btn-primary{ @apply inline-flex items-center justify-center rounded-xl px-5 py-3 bg-electric text-white hover:opacity-90 transition; }
+.btn-secondary{ @apply inline-flex items-center justify-center rounded-xl px-5 py-3 border border-slate text-offwhite hover:bg-slate/20 transition; }
+.nav-link{ @apply text-offwhite/80 hover:text-offwhite transition; }
+.footer-link{ @apply text-offwhite/60 hover:text-offwhite transition; }
+input,textarea{ @apply w-full bg-graphite border border-slate/50 rounded-xl p-3 text-offwhite focus:outline-none focus:ring-2 focus:ring-electric; }
+label{ @apply text-sm text-offwhite/70; }
